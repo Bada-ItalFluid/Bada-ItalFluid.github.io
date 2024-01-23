@@ -1,0 +1,55 @@
+:root{
+    font-size: 62.5%;
+}
+::-webkit-scrollbar
+{
+    background-color: rgb(209, 209, 209);
+
+}
+::-webkit-scrollbar-thumb
+{
+    border-radius: 20px;
+    background-color: #eb9834;
+
+}
+html
+{
+    scroll-behavior: smooth;
+    
+}
+body
+{
+    width: 100%;
+    background-color: white;
+
+    padding: 0;
+    margin: 0;
+
+    font-size: 1.6rem;
+}
+.headerDiv1
+{
+    width: 90%;
+    margin: 0 5%;
+}
+.headerLogo{
+    padding: .5%;
+    width: 20%;
+}
+.headerLogo img{
+    width: 20rem;
+}
+.headerDiv1
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.headerGrid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: red;
+}
+.loc img{
+    width: 20%;
+}
