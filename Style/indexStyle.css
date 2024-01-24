@@ -1,3 +1,13 @@
+/* #region FONTS */
+@font-face {
+    font-family: Merriweather;
+    src: url(Font/Merriweather.ttf);
+}
+@font-face {
+    font-family: WorkSans;
+    src: url(Font/WorkSans.ttf);
+}
+/* #endregion */
 :root{
     font-size: 62.5%;
 }
@@ -27,29 +37,58 @@ body
 
     font-size: 1.6rem;
 }
+
 .headerDiv1
 {
-    width: 90%;
-    margin: 0 5%;
+    padding: .5% 5%;
+    display: flex;
+    justify-content: space-between;
+
+
+
 }
-.headerLogo{
-    padding: .5%;
-    width: 20%;
-}
-.headerLogo img{
-    width: 20rem;
-}
-.headerDiv1
+.locationsContainer
 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    width: 50%;
+
+
 }
-.headerGrid
+.locationsContainer div
 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: red;
+    display: flex;
+    justify-content: center;
 }
-.loc img{
-    width: 20%;
+
+.locationsContainer img
+{
+    width: 7rem;
+    align-self: center;
+}
+
+.locationsContainer p
+{
+    align-self: center;
+    font-size: 2rem;
+    font-family: worksans;
+}
+
+.headerLogo
+{
+    display: flex;
+}
+
+.headerLogo img
+{
+    width: 100%;
+}
+
+
+span
+{
+    font-family: merriweather;
+    font-size: 1.2rem;
+    color: #666666;
 }
