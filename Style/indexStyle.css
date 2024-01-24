@@ -8,7 +8,7 @@
     src: url(Font/Pair2/Cinzel.ttf);
 }
 @font-face {
-    font-family: paragraphFont;
+    font-family: textFont;
     src: url(Font/Pair2/FaunaOne.ttf);
 }
 /* #endregion */
@@ -34,17 +34,27 @@ html
 body
 {
     width: 100%;
-    background-color: white;
 
     padding: 0;
     margin: 0;
 
     font-size: 1.6rem;
 }
-
+.body
+{
+    background-image: url(../Images/wall.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+header
+{
+    background-color: white;
+}
 .headerDiv1
 {
-    border-bottom: #777777 solid 2px;
+
     padding: 0% 2%;
     display: flex;
     justify-content: space-between;
@@ -76,4 +86,41 @@ body
 .headerTitle span
 {
     font-size: 3.5rem;
+}
+.headerDiv2
+{
+    background-color: #313135;
+    border-bottom: #eb9834 3px solid ;
+    border-top: #eb9834 5px solid;
+}
+.headerDiv2 ul
+{
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 3rem 0;
+}
+.headerDiv2 li
+{
+    padding: 0 4rem;
+
+    
+}
+.headerDiv2 a
+{
+    padding: 2rem 0;
+    color: #eb9834;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: titleFont;
+    transition: color 400ms, font-size 400ms;
+
+}
+
+.headerDiv2 a:hover
+{
+    color: white;
+    font-size: 2.2rem;
 }
