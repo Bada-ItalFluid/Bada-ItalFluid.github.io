@@ -1,11 +1,15 @@
 /* #region FONTS */
 @font-face {
-    font-family: Merriweather;
-    src: url(Font/Merriweather.ttf);
+    font-family: decorFont;
+    src: url(Font/Pair2/CinzelDecorative.ttf);
 }
 @font-face {
-    font-family: WorkSans;
-    src: url(Font/WorkSans.ttf);
+    font-family: titleFont;
+    src: url(Font/Pair2/Cinzel.ttf);
+}
+@font-face {
+    font-family: paragraphFont;
+    src: url(Font/Pair2/FaunaOne.ttf);
 }
 /* #endregion */
 :root{
@@ -40,55 +44,36 @@ body
 
 .headerDiv1
 {
-    padding: .5% 5%;
+    border-bottom: #777777 solid 2px;
+    padding: 0% 2%;
     display: flex;
     justify-content: space-between;
 
-
-
-}
-.locationsContainer
-{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
-    width: 50%;
-
-
-}
-.locationsContainer div
-{
-    display: flex;
-    justify-content: center;
-}
-
-.locationsContainer img
-{
-    width: 7rem;
-    align-self: center;
-}
-
-.locationsContainer p
-{
-    align-self: center;
-    font-size: 2rem;
-    font-family: worksans;
 }
 
 .headerLogo
 {
     display: flex;
+    width: 11%;
 }
 
 .headerLogo img
 {
+    align-self: center;
     width: 100%;
 }
 
 
-span
+.headerTitle h1
 {
-    font-family: merriweather;
-    font-size: 1.2rem;
-    color: #666666;
+    user-select: none;
+    color: #eb9834;
+    font-family: decorFont;
+    font-size: 3rem;
+    text-align: center;
+
+}
+.headerTitle span
+{
+    font-size: 3.5rem;
 }
