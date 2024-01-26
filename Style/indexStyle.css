@@ -40,16 +40,11 @@ body
 
     font-size: 1.6rem;
 }
-.body
-{
-    background-image: url(../Images/wall.jpg);
-    background-size: 100%;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-}
+
+/* #region HEADER */
 header
 {
+    width: 100vw;
     background-color: white;
 }
 .headerDiv1
@@ -73,9 +68,14 @@ header
     width: 100%;
 }
 
+.headerTitle
+{
+    width: 20%;
+}
 
 .headerTitle h1
 {
+    
     user-select: none;
     color: #eb9834;
     font-family: decorFont;
@@ -90,8 +90,8 @@ header
 .headerDiv2
 {
     background-color: #313135;
-    border-bottom: #eb9834 3px solid ;
-    border-top: #eb9834 5px solid;
+    border-bottom: #eb9834 .3rem solid ;
+    border-top: #eb9834 .5rem solid;
 }
 .headerDiv2 ul
 {
@@ -124,3 +124,68 @@ header
     color: white;
     font-size: 2.2rem;
 }
+/* #endregion */
+
+/* #region SLIDER */
+
+
+/* #endregion */
+
+/* #region MEDIA */
+@media (max-width: 480px) {
+    .headerDiv1
+    {
+
+        padding: 1% 0%;
+        display: grid;
+        justify-content: center;
+
+    }
+    .headerLogo
+    {
+        display: flex;
+        width: 30%;
+        justify-self: center;
+
+    }
+
+    .headerTitle
+    {
+        width: 100%;
+    }
+    .headerTitle h1
+    {
+        font-size: 1.3rem;
+
+    }
+    .headerTitle span
+    {
+        font-size: 1.6rem;
+    }
+
+    .headerDiv2
+    {
+        border-bottom: #eb9834 .2rem solid ;
+        border-top: #eb9834 .3rem solid;
+    }
+
+    .headerDiv2 ul
+    {
+        padding: 1rem 0;
+    }
+    .headerDiv2 li
+    {
+        padding: 0 1rem;
+    }
+    .headerDiv2 a
+    {
+        padding: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .headerDiv2 a:hover
+    {
+        font-size: 1.3rem;
+    }
+}
+/* #endregion */
