@@ -7,4 +7,4 @@ setInterval(function(){
     {
         counter = 1;
     }
-}, 8000);
+}, 800000);
