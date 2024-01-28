@@ -11,6 +11,14 @@
     font-family: textFont;
     src: url(Font/Pair2/FaunaOne.ttf);
 }
+@font-face {
+    font-family: slideTitle;
+    src: url(Font/Pair4/BarlowCondensed-Regular.ttf);
+}
+@font-face {
+    font-family: slideText;
+    src: url(Font/Pair4/AcariSans-Regular.ttf);
+}
 /* #endregion */
 :root{
     font-size: 62.5%;
@@ -33,6 +41,7 @@ html
 }
 body
 {
+    overflow: hidden;
     background-color: #c3c3c3;
     width: 100%;
 
@@ -129,6 +138,182 @@ header
 /* #endregion */
 
 /* #region SLIDER */
+.slider
+{
+    
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+
+}
+.slides
+{
+    
+    width: 500%;
+    display: flex;
+    
+}
+.slides input
+{
+    display: none;
+}
+.slide
+{
+    
+    width: 100vw;
+    transition: 2000ms;
+}
+.slide .slide1title
+{
+    opacity: 0;
+    font-family: slideTitle;
+    color: white;
+    -webkit-text-stroke: #eb9834 .15rem;
+    width: 100%;
+    position: absolute;
+    font-size: 20rem;
+    top: 22%;
+    text-align: center;
+    user-select: none;
+
+    transition: 2000ms;
+}
+.slide .slide2title
+{
+    opacity: 0;
+    font-family: slideTitle;
+
+    color: white;
+    width: 100%;
+    position: absolute;
+    font-size: 12rem;
+    top: 25%;
+    text-align: center;
+    user-select: none;
+
+    transition: 2000ms;
+}
+
+.slide img
+{
+    width: 100%;
+}
+.slideManualNav
+{
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.manualBtn
+{
+    border: .25rem solid #ffffff;
+    padding: .8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1000ms;
+}
+.manualBtn:not(:last-child)
+{
+    margin-right: 3rem;
+}
+.manualBtn:hover
+{
+    background:white;
+}
+
+#slideRadio1:checked ~ .first
+{
+    margin-left: 0;
+}
+
+#slideRadio2:checked ~ .first
+{
+    margin-left: -20%;
+}
+
+#slideRadio3:checked ~ .first
+{
+    margin-left: -40%;
+}
+
+#slideRadio4:checked ~ .first
+{
+    margin-left: -60%;
+}
+
+
+#slideRadio1:checked ~ .slide #txt1
+{
+    opacity: 100;
+}
+
+#slideRadio2:checked ~ .slide #txt2
+{
+    opacity: 100;
+}
+
+#slideRadio3:checked ~ .slide #txt3
+{
+    opacity: 100;
+}
+
+#slideRadio4:checked ~ .slide #txt4
+{
+    opacity: 100;
+}
+
+.slideAutoNav
+{
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.slideAutoNav div
+{
+    border: .25rem solid #ffffff;
+    padding: .8rem;
+    border-radius: 50%;
+    transition: 1000ms;
+}
+.slideAutoNav div:not(:last-child)
+{
+    margin-right: 3rem;
+
+}
+
+#slideRadio1:checked ~ .slideAutoNav .autoBtn1
+{
+    background:#ffffff;
+    
+
+}
+
+#slideRadio2:checked ~ .slideAutoNav .autoBtn2
+{
+    background:#ffffff;
+    
+
+}
+
+#slideRadio3:checked ~ .slideAutoNav .autoBtn3
+{
+    background:#ffffff;
+    
+
+}
+#slideRadio4:checked ~ .slideAutoNav .autoBtn4
+{
+    background:#ffffff;
+    
+
+}
+
 
 
 /* #endregion */

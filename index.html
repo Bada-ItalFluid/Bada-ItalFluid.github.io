@@ -8,9 +8,49 @@
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='Style/indexStyle.css'>
-    <script src='Script/main.js'></script>
+    <script src='Script/indexScript.js'></script>
 </head>
 <body>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="slide-radio-btn" id="slideRadio1" checked>
+            <input type="radio" name="slide-radio-btn" id="slideRadio2">
+            <input type="radio" name="slide-radio-btn" id="slideRadio3">
+            <input type="radio" name="slide-radio-btn" id="slideRadio4">
+
+            <div class="slide first">
+                <img src="Images/Slider/pump.jpg">
+                <h1 id="txt1" class="slide1title">WELCOME TO ITALFLUID</h1>
+
+            </div>
+            <div class="slide">
+                <img src="Images/Slider/plant.png">
+                <h1 id="txt2" class="slide2title">PLANT CONSTRUCTION,<br>COMMISSIONING & MANAGEMENT</h1>
+
+            </div>
+            <div class="slide">
+                <img src="Images/Slider/machinery2.png">
+                <h1 id="txt3" class="slide2title" style="font-size: 11rem; top: 25.5%;">WIDE RANGE OF OIL TREATEMENT EQUIPMENT,<br>DESIGNED AND CONSTRUCTED INHOUSE</h1>
+            </div>
+            <div class="slide">
+                <img src="Images/Slider/machinery.jpg">
+                <h1 id="txt4" class="slide2title" style="font-size: 11rem; top: 20%;">WE PROVIDE HIGH QUALITY SERVICES<br>TO OIL COMPANIES AND CONSTANTLY FULFILL CUSTOMER SATISFACTION</h1>
+            </div>
+
+            <div class="slideAutoNav">
+                <div class="autoBtn1"></div>
+                <div class="autoBtn2"></div>
+                <div class="autoBtn3"></div>
+                <div class="autoBtn4"></div>
+            </div>
+            <div class="slideManualNav">
+                <label for="slideRadio1" class="manualBtn"></label>
+                <label for="slideRadio2" class="manualBtn"></label>
+                <label for="slideRadio3" class="manualBtn"></label>
+                <label for="slideRadio4" class="manualBtn"></label>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="headerDiv1">
             <div class="headerLogo">
