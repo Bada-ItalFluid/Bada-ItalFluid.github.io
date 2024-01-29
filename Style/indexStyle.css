@@ -44,7 +44,6 @@ body
     overflow-x: hidden;
     background-color: #c3c3c3;
     width: 100%;
-    
     padding: 0;
     margin: 0;
 
@@ -181,6 +180,62 @@ header
 }
 /* #endregion */
 
+/* #region RETURN */
+.return
+{
+    z-index: 99;
+    position: fixed;
+    margin: 5rem;
+    bottom: 0;
+    left: 0;
+}
+.return a
+{   
+    text-align: center;
+    padding: 1rem 1.6rem 1.6rem 1.4rem;
+    text-decoration: none;
+    color: white;
+    font-size: 5rem;
+    background-color: #1A1A1C;
+    border: #f08c13 solid;
+    border-radius: 100%;
+    transition-duration: 400ms;
+}
+
+.return p
+{
+    position: absolute;
+    margin-top: -90%;
+    color: transparent;
+    font-family: slideTitle;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-left: 28%;
+    transition-duration: 600ms;
+    user-select: none;
+}
+
+.return a:hover ~ p
+{
+    margin-top: -130%;
+    margin-left: 10%;
+    font-size: 3.5rem;
+
+    color: #f08c13;
+    
+
+}
+
+.return a:hover
+{
+    color: #f08c13;
+    border-radius: 1rem;
+    transition-duration: 400ms;
+
+}
+
+/* #endregion */
+
 /* #region SLIDER */
 .slider
 {
@@ -205,70 +260,75 @@ header
 }
 .slide
 {
-    
+    justify-content: center;
+
+    position: relative;
+    z-index: 0;
+    display: flex;
     width: 100vw;
     transition: 2000ms;
 }
-.slide .slide1title
+
+.slide .textContainer
+{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.slideText
+{
+    color: white;
+    text-align: center;
+    font-family: slideTitle;
+    user-select: none;
+}
+.slideText1
+{
+    font-size: 19rem;
+    color: #f08c13;
+    text-shadow: #f08c13 0 0 14px;
+    background-size: 400%;
+    animation: gradientText 14s linear infinite;
+    
+}
+.slideText2
 {
     opacity: 0;
-    font-family: slideTitle;
-    color: white;
-    -webkit-text-stroke: #eb9834 .15rem;
-    width: 100%;
-    position: absolute;
-    font-size: 20rem;
-    top: 22%;
-    text-align: center;
-    user-select: none;
-
-    transition: 2000ms;
+    font-size: 14rem;
+    transition: 800ms 800ms;
 }
-.slide .slide2title
+#slideRadio2:checked ~ .slide .slideText2
+{
+    opacity: 100;
+}
+.slideText3
 {
     opacity: 0;
-    font-family: slideTitle;
-
-    color: white;
-    width: 100%;
-    position: absolute;
-    font-size: 12rem;
-    top: 25%;
-    text-align: center;
-    user-select: none;
-
-    transition: 2000ms;
+    font-size: 10rem;
+    transition: 800ms 800ms;
 }
-.slide .slide3title
+#slideRadio3:checked ~ .slide .slideText3
+{
+    opacity: 100;
+}
+.slideText4
 {
     opacity: 0;
-    font-family: slideTitle;
-
-    color: white;
-    width: 100%;
-    position: absolute;
-    font-size: 11rem;
-    top: 25.5%;
-    text-align: center;
-    user-select: none;
-
-    transition: 2000ms;
+    font-size: 10rem;
+    transition: 800ms 800ms;
 }
-.slide .slide4title
+#slideRadio4:checked ~ .slide .slideText4
 {
-    opacity: 0;
-    font-family: slideTitle;
-
-    color: white;
-    width: 100%;
-    position: absolute;
-    font-size: 11rem;
-    top: 20%;
-    text-align: center;
-    user-select: none;
-
-    transition: 2000ms;
+    opacity: 100;
 }
+
+
+
+
+
 .slide img
 {
     width: 100%;
@@ -319,25 +379,7 @@ header
 }
 
 
-#slideRadio1:checked ~ .slide #txt1
-{
-    opacity: 100;
-}
 
-#slideRadio2:checked ~ .slide #txt2
-{
-    opacity: 100;
-}
-
-#slideRadio3:checked ~ .slide #txt3
-{
-    opacity: 100;
-}
-
-#slideRadio4:checked ~ .slide #txt4
-{
-    opacity: 100;
-}
 
 .slideAutoNav
 {
@@ -462,29 +504,6 @@ header
         width: 100vw;
         transition: 2000ms;
     }
-    .slide .slide1title
-    {
-        -webkit-text-stroke: #eb9834 .05rem;
-        font-size: 3.5rem;
-        top: 7%;
-    }
-    .slide .slide2title
-    {
-
-        font-size: 2.5rem;
-        top: 7%;
-
-    }
-    .slide .slide3title
-    {
-        font-size: 2rem;
-        top: 8%;
-    }
-    .slide .slide4title
-    {
-        font-size: 2rem;
-        top: 7%;
-    }
 
     .slideManualNav
     {
@@ -519,31 +538,6 @@ header
 /* #endregion */
 }
 
-@media (min-width: 430px) and (max-width: 480px) {
-    .slide .slide1title
-    {
-        -webkit-text-stroke: #eb9834 .05rem;
-        font-size: 3.5rem;
-        top: 10%;
-    }
-    .slide .slide2title
-    {
-
-        font-size: 2.5rem;
-        top: 10%;
-
-    }
-    .slide .slide3title
-    {
-        font-size: 2rem;
-        top: 11%;
-    }
-    .slide .slide4title
-    {
-        font-size: 2rem;
-        top: 10%;
-    }
-}
 @media (min-width: 480.5px) and (max-width: 564px) {
     .headerDiv1
     {
@@ -611,29 +605,7 @@ header
     {   
         width: 100vw;
     }
-    .slide .slide1title
-    {
-        -webkit-text-stroke: #eb9834 .05rem;
-        font-size: 5rem;
-        top: 7%;
-    }
-    .slide .slide2title
-    {
 
-        font-size: 3rem;
-        top: 8%;
-
-    }
-    .slide .slide3title
-    {
-        font-size: 2.8rem;
-        top: 8%;
-    }
-    .slide .slide4title
-    {
-        font-size: 2.5rem;
-        top: 7%;
-    }
 
     .slideManualNav
     {
@@ -668,7 +640,6 @@ header
 /* #endregion */
 
 }
-
 @media (min-width:564.5px) and (max-width: 1120px) {
     .headerDiv1
     {
@@ -779,7 +750,6 @@ header
     {
         font-size: 1.8rem;
     }
-    /* #region SLIDER */
     .slider
     {
         margin: 0 auto;
@@ -791,29 +761,7 @@ header
     {   
         width: 100vw;
     }
-    .slide .slide1title
-    {
-        -webkit-text-stroke: #eb9834 .05rem;
-        font-size: 7.5rem;
-        top: 9%;
-    }
-    .slide .slide2title
-    {
-
-        font-size: 5rem;
-        top: 10%;
-
-    }
-    .slide .slide3title
-    {
-        font-size: 4rem;
-        top: 11%;
-    }
-    .slide .slide4title
-    {
-        font-size: 4rem;
-        top: 9%;
-    }
+    
 
     .slideManualNav
     {
@@ -922,7 +870,6 @@ header
         font-size: 2.2rem;
     }
 
-    /* #region SLIDER */
     .slider
     {
         margin: 0 auto;
@@ -934,29 +881,7 @@ header
     {   
         width: 100vw;
     }
-    .slide .slide1title
-    {
-        -webkit-text-stroke: #eb9834 .05rem;
-        font-size: 13rem;
-        top: 20%;
-    }
-    .slide .slide2title
-    {
-
-        font-size: 10rem;
-        top: 18%;
-
-    }
-    .slide .slide3title
-    {
-        font-size: 8rem;
-        top: 26%;
-    }
-    .slide .slide4title
-    {
-        font-size: 8rem;
-        top: 26%;
-    }
+    
 
     .slideManualNav
     {

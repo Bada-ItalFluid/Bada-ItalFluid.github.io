@@ -11,34 +11,46 @@
     <script src='Script/indexScript.js'></script>
     <script src="Script/loadingScript.js"></script>
 </head>
-<body>
+<body id="top">
     <div class="loading" >
         <h1>Loading, <span>Please wait...</span></h1>
     </div>
+    <div class="return">
+
+        <a href="#top">&#9650</a>
+        <p>go up</p>
+
+    </div>
     <div class="slider">
         <div class="slides">
-            <input type="radio" name="slide-radio-btn" id="slideRadio1" checked>
-            <input type="radio" name="slide-radio-btn" id="slideRadio2">
-            <input type="radio" name="slide-radio-btn" id="slideRadio3">
-            <input type="radio" name="slide-radio-btn" id="slideRadio4">
+            <input type="radio" name="slide-radio-btn" id="slideRadio1" onclick="counter = 1" checked>
+            <input type="radio" name="slide-radio-btn" id="slideRadio2" onclick="counter = 2">
+            <input type="radio" name="slide-radio-btn" id="slideRadio3" onclick="counter = 3">
+            <input type="radio" name="slide-radio-btn" id="slideRadio4" onclick="counter = 4">
 
             <div class="slide first">
                 <img src="Images/Slider/pump.jpg">
-                <h1 id="txt1" class="slide1title">WELCOME TO ITALFLUID</h1>
-
+                <div class="textContainer">
+                    <h1 class="slideText slideText1">WELCOME TO ITALFLUID</h1>
+                </div>
             </div>
             <div class="slide">
                 <img src="Images/Slider/plant.png">
-                <h1 id="txt2" class="slide2title">PLANT CONSTRUCTION,<br>COMMISSIONING & MANAGEMENT</h1>
-
+                <div class="textContainer">
+                    <h1 class="slideText slideText2">PLANT CONSTRUCTION,<br>COMMISSIONING & MANAGEMENT</h1>
+                </div>
             </div>
             <div class="slide">
                 <img src="Images/Slider/machinery2.png">
-                <h1 id="txt3" class="slide3title">WIDE RANGE OF OIL TREATEMENT EQUIPMENT,<br>DESIGNED AND CONSTRUCTED INHOUSE</h1>
+                <div class="textContainer">
+                    <h1 class="slideText slideText3">WIDE RANGE OF OIL TREATEMENT EQUIPMENT,<br>DESIGNED AND CONSTRUCTED INHOUSE</h1>
+                </div>
             </div>
             <div class="slide">
                 <img src="Images/Slider/machinery.jpg">
-                <h1 id="txt4" class="slide4title">WE PROVIDE HIGH QUALITY SERVICES<br>TO OIL COMPANIES AND CONSTANTLY FULFILL CUSTOMER SATISFACTION</h1>
+                <div class="textContainer">
+                    <h1 class="slideText slideText4">WE PROVIDE HIGH QUALITY SERVICES<br>TO OIL COMPANIES AND CONSTANTLY FULFILL CUSTOMER SATISFACTION</h1>
+                </div>
             </div>
 
             <div class="slideAutoNav">
