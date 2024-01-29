@@ -1,0 +1,88 @@
+.catGrid
+    {
+        width: 90%;
+        margin: 3rem auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.6rem;
+    }
+    .catCard
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #fff;
+        border-radius: 0 0 .6rem .6rem;
+
+        transition: 400ms;
+    }
+    .catImage
+    {
+        margin: 0 auto;
+        margin-bottom: -1rem;
+
+    }
+    .catImage img
+    {
+        width: 100%;
+        user-select: none;
+        margin-bottom: 1rem;
+    }
+
+    .catImage h1
+    {
+        margin: 0;
+        font-family: titlefont;
+        text-align: center;
+        color: #eb9834;
+        font-size: 4rem;
+        user-select: none;
+    }
+    .catCard:hover
+    {
+        box-shadow: #eb9834 1rem 1rem;
+    }
+    .catText
+    {
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .catText p
+    {
+        vertical-align: top;
+        font-family: textFont;
+        font-size: 1.6rem;
+        color: #313135;
+    }
+
+    .catCard .go
+    {
+        background-color: #eb9834;
+        width: fit-content;
+        padding: 1.6rem 0;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        transition: 400ms;
+    }
+
+    .catCard .go a
+    {
+        font-size: 2rem;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-family: textfont;
+        padding: 1.6rem 2.5rem 1.6rem 3rem;
+
+        transition: 400ms;
+
+    }
+    .catCard .go:hover
+    {
+        background-color: transparent;
+    }
+
+    .catCard .go:hover > a
+    {
+        color: #eb9834;
+    }
