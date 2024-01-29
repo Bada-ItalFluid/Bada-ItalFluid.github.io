@@ -49,6 +49,10 @@ body
 
     font-size: 1.6rem;
 }
+img
+{
+    user-select: none;
+}
 /* #region LOADING PAGE */
 
 .loading
@@ -192,6 +196,7 @@ header
 }
 .return a
 {   
+    user-select: none;
     text-align: center;
     padding: 1rem 1.6rem 1.5rem 1.4rem;
     text-decoration: none;
