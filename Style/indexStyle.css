@@ -541,6 +541,47 @@ header
 
 /* #endregion */
 
+/* #region CHART*/
+.workingMap
+{
+    border-top: #f08c13 .6rem solid;
+    border-bottom: #f08c13 .6rem solid;
+
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    background-color: #313135;
+    justify-content: space-between;
+    align-items: center;
+}
+.workingMap .text
+{
+    width: 40%;
+    margin-left: 5%;
+    color: white;
+
+}
+.workingMap .text h1
+{
+    font-family: titleFont;
+    font-size: 5rem;
+    user-select: none;
+}
+.workingMap .text p
+{
+    margin-top: -2rem;
+    font-family: textFont;
+    font-size: 1.8rem;
+}
+.chart img
+{
+    border-radius: 50% 0 0 50%;
+    margin-bottom: -.35rem;
+    width: 100%;
+
+}
+/* #endregion */
+
 /* #region MEDIA */
 /* PHONES */
 @media (max-width: 480px) {
@@ -741,7 +782,46 @@ header
     }
 
     /* #endregion */
-  
+    /* #region CHART*/
+    .workingMap
+    {
+        border-top: #f08c13 .4rem solid;
+        border-bottom: #f08c13 .4rem solid;
+
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        background-color: #313135;
+        align-items: center;
+    }
+    .workingMap .text
+    {
+        width: auto;
+        margin: 0;
+        padding: 0 2%;
+        color: white;
+        text-align: center;
+
+    }
+    .workingMap .text h1
+    {
+        font-family: titleFont;
+        font-size: 3rem;
+        user-select: none;
+    }
+    .workingMap .text p
+    {
+        line-height: 2.5rem;
+        margin-top: -.5rem;
+        font-family: textFont;
+        font-size: 1.6rem;
+    }
+    .chart img
+    {
+        border-radius: 2rem 2rem 0 0;
+        margin-bottom: -.35rem;
+    }
+    /* #endregion */
 }
 /* PHONES LARGE AND SMALL TABLET*/
 @media (min-width: 480.5px) and (max-width: 564px) {
@@ -940,7 +1020,44 @@ header
     }
 
     /* #endregion */
+    /* #region CHART*/
+    .workingMap
+    {
+        border-top: #f08c13 .5rem solid;
+        border-bottom: #f08c13 .5rem solid;
 
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+    }
+    .workingMap .text
+    {
+        width: auto;
+        margin: 0;
+        padding: 0 2%;
+        color: white;
+        text-align: center;
+
+    }
+    .workingMap .text h1
+    {
+        font-family: titleFont;
+        font-size: 3.5rem;
+        user-select: none;
+    }
+    .workingMap .text p
+    {
+        line-height: 2.5rem;
+        margin-top: -1rem;
+        font-family: textFont;
+        font-size: 1.6rem;
+    }
+    .chart img
+    {
+        border-radius: 4rem 4rem 0 0;
+        margin-bottom: -.35rem;
+    }
+    /* #endregion */
 }
 /*LARGE TABLETS AND SMALL LAPTOPS*/
 @media (min-width:564.5px) and (max-width: 1120px) {
@@ -1167,6 +1284,44 @@ header
     }
 
     /* #endregion */
+    /* #region CHART*/
+    .workingMap
+    {
+        border-top: #f08c13 .5rem solid;
+        border-bottom: #f08c13 .5rem solid;
+
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+    }
+    .workingMap .text
+    {
+        width: auto;
+        margin: 0;
+        padding: 0 2%;
+        color: white;
+        text-align: center;
+
+    }
+    .workingMap .text h1
+    {
+        font-family: titleFont;
+        font-size: 4rem;
+        user-select: none;
+    }
+    .workingMap .text p
+    {
+        line-height: 2.8rem;
+        margin-top: -1rem;
+        font-family: textFont;
+        font-size: 1.7rem;
+    }
+    .chart img
+    {
+        border-radius: 4rem 4rem 0 0;
+        margin-bottom: -.35rem;
+    }
+    /* #endregion */
 }
 @media (min-width:1024.5px) and (max-width: 1120px)
 {
@@ -1228,7 +1383,44 @@ header
     }
 
     /* #endregion */
+    /* #region CHART*/
+    .workingMap
+    {
+        border-top: #f08c13 .5rem solid;
+        border-bottom: #f08c13 .5rem solid;
 
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+    }
+    .workingMap .text
+    {
+        width: auto;
+        margin: 0;
+        padding: 0 2%;
+        color: white;
+        text-align: center;
+
+    }
+    .workingMap .text h1
+    {
+        font-family: titleFont;
+        font-size: 6rem;
+        user-select: none;
+    }
+    .workingMap .text p
+    {
+        line-height: 3rem;
+        margin-top: -2rem;
+        font-family: textFont;
+        font-size: 2rem;
+    }
+    .chart img
+    {
+        border-radius: 4rem 4rem 0 0;
+        margin-bottom: -.35rem;
+    }
+    /* #endregion */
 }
 /*LAPTOPS*/
 @media (min-width:1120.5px) and (max-width: 1919px) {
