@@ -611,12 +611,12 @@ header
     }
     .headerTitle h1
     {
-        font-size: 1.3rem;
+        font-size: 2.4rem;
 
     }
     .headerTitle span
     {
-        font-size: 1.6rem;
+        font-size: 2.8rem;
     }
 
     .headerDiv2
@@ -628,7 +628,7 @@ header
     .headerDiv2 ul
     {
 
-        padding: 1rem 0rem;
+        padding: .4rem 0rem;
     }
     .headerDiv2 li
     {
@@ -642,8 +642,8 @@ header
     .headerDiv2 a
     {
         align-self: center;
-        padding: 1rem 0;
-        font-size: 1.1rem;
+        padding: .4rem 0;
+        font-size: 1.4rem;
     }
     li.middle
     {
@@ -651,7 +651,7 @@ header
     }
     .headerDiv2 a:hover
     {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
     /* #endregion */
     /* #region RETURN */
@@ -806,15 +806,15 @@ header
     .workingMap .text h1
     {
         font-family: titleFont;
-        font-size: 3rem;
+        font-size: 2.4rem;
         user-select: none;
     }
     .workingMap .text p
     {
-        line-height: 2.5rem;
+        line-height: 2rem;
         margin-top: -.5rem;
         font-family: textFont;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
     .chart img
     {
@@ -1047,7 +1047,7 @@ header
     }
     .workingMap .text p
     {
-        line-height: 2.5rem;
+        line-height: 2rem;
         margin-top: -1rem;
         font-family: textFont;
         font-size: 1.6rem;
