@@ -75,7 +75,7 @@ body
     color: #f08c13;
 
     font-family: slideTitle;
-    font-size: 10vw;
+    font-size: 9vw;
     text-transform: uppercase;
 
     text-align: center;
@@ -222,6 +222,7 @@ header
     font-size: 3.5rem;
 
     color: #f08c13;
+    text-shadow: 0 0 .5vw #f08c13;
     
 
 }
@@ -231,6 +232,9 @@ header
     color: #f08c13;
     border-radius: 1rem;
     transition-duration: 400ms;
+    box-shadow: 0 0 .5vw #f08c13;
+    text-shadow: 0 0 1vw #f08c13;
+    
 
 }
 
@@ -287,17 +291,16 @@ header
 }
 .slideText1
 {
-    font-size: 19rem;
+    font-size: 10vw;
     color: #f08c13;
-    text-shadow: #f08c13 0 0 14px;
-    background-size: 400%;
-    animation: gradientText 14s linear infinite;
+    text-shadow: #f08c13 0 0 .8vw;
     
 }
 .slideText2
 {
+    text-shadow: 1rem 1rem 1rem black;
     opacity: 0;
-    font-size: 14rem;
+    font-size: 5.5vw;
     transition: 800ms 800ms;
 }
 #slideRadio2:checked ~ .slide .slideText2
@@ -306,8 +309,9 @@ header
 }
 .slideText3
 {
+    text-shadow: 1rem 1rem 1rem black;
     opacity: 0;
-    font-size: 10rem;
+    font-size: 5.5vw;
     transition: 800ms 800ms;
 }
 #slideRadio3:checked ~ .slide .slideText3
@@ -316,8 +320,9 @@ header
 }
 .slideText4
 {
+    text-shadow: 1rem 1rem 1rem black;
     opacity: 0;
-    font-size: 10rem;
+    font-size: 5.5vw;
     transition: 800ms 800ms;
 }
 #slideRadio4:checked ~ .slide .slideText4
@@ -348,6 +353,8 @@ header
     border-radius: 50%;
     cursor: pointer;
     transition: 1000ms;
+    box-shadow: 0 0 .7vw white;
+
 }
 .manualBtn:not(:last-child)
 {
@@ -356,6 +363,7 @@ header
 .manualBtn:hover
 {
     background:white;
+
 }
 
 #slideRadio1:checked ~ .first
@@ -377,6 +385,7 @@ header
 {
     margin-left: -60%;
 }
+
 
 
 
@@ -434,7 +443,12 @@ header
 /* #endregion */
 
 /* #region MEDIA */
+/* PHONES */
 @media (max-width: 480px) {
+    .loading h1{
+        font-size: 12vw;
+    }
+    /* #region HEADER */
     .headerDiv1
     {
 
@@ -489,9 +503,36 @@ header
     {
         font-size: 1.3rem;
     }
+    /* #endregion */
+    /* #region RETURN */
+    .return
+    {
+        margin: 0;
+        
+        top: auto;
+        left: auto;
+        bottom: 4vh;
+        right: 4vw;    
+    }   
+    .return a
+    {   
+
+        font-size: 3rem;
+        padding: 0.9rem 1.1rem 1.1rem 1.1rem;
+    }
+
+    .return p
+    {
+        display: none;
+    }
+    /* #endregion */
+    /* #region SLIDER */
+    .slide .textContainer
+    {
+        height: 100%;
+    }
 
     
-/* #region SLIDER */
     .slider
     {
         margin: 0 auto;
@@ -499,11 +540,7 @@ header
         height: auto;
         overflow: hidden;
     }
-    .slide
-    {   
-        width: 100vw;
-        transition: 2000ms;
-    }
+
 
     .slideManualNav
     {
@@ -512,7 +549,7 @@ header
     .manualBtn
     {
         border: .1rem solid #ffffff;
-        padding: .3rem;
+        padding: .4rem;
     }
     .manualBtn:not(:last-child)
     {
@@ -526,7 +563,7 @@ header
     .slideAutoNav div
     {
         border: .1rem solid #ffffff;
-        padding: .3rem;
+        padding: .4rem;
     }
     .slideAutoNav div:not(:last-child)
     {
@@ -535,10 +572,15 @@ header
 
 
 
-/* #endregion */
+    /* #endregion */
+    
 }
-
+/* PHONES LARGE AND SMALL TABLET*/
 @media (min-width: 480.5px) and (max-width: 564px) {
+    .loading h1{
+        font-size: 14vw;
+    }
+    /* #region HEADER */
     .headerDiv1
     {
 
@@ -593,6 +635,7 @@ header
     {
         font-size: 1.8rem;
     }
+    /* #endregion */
     /* #region SLIDER */
     .slider
     {
@@ -634,13 +677,34 @@ header
     {
         margin-right: 2rem;
     }
+    /* #endregion */
+    /* #region RETURN */
+    .return
+    {
+        margin: 0;
+        
+        top: auto;
+        left: auto;
+        bottom: 4vh;
+        right: 4vw;    
+    }   
+    .return a
+    {   
 
+        font-size: 3rem;
+        padding: 0.9rem 1.1rem 1.1rem 1.1rem;
+    }
 
-
-/* #endregion */
+    .return p
+    {
+        display: none;
+    }
+    /* #endregion */
 
 }
+/*LARGE TABLETS AND SMALL LAPTOPS*/
 @media (min-width:564.5px) and (max-width: 1120px) {
+    /* #region HEADER */
     .headerDiv1
     {
 
@@ -750,6 +814,8 @@ header
     {
         font-size: 1.8rem;
     }
+    /* #endregion */
+    /* #region SLIDER */
     .slider
     {
         margin: 0 auto;
@@ -790,9 +856,33 @@ header
     {
         margin-right: 2rem;
     }
-}
+    /* #endregion */
+    /* #region RETURN */
+    .return
+    {
+        margin: 0;
+        
+        top: auto;
+        left: auto;
+        bottom: 4vh;
+        right: 4vw;    
+    }   
+    .return a
+    {   
 
+        font-size: 5rem;
+        padding: 1.1rem 1.4rem 1.4rem 1.3rem;
+    }
+
+    .return p
+    {
+        display: none;
+    }
+    /* #endregion */
+}
+/*LAPTOPS*/
 @media (min-width:1120.5px) and (max-width: 1919px) {
+    /* #region HEADER */
     .headerDiv1
     {
         padding: 0 2%;
@@ -869,7 +959,8 @@ header
         color: white;
         font-size: 2.2rem;
     }
-
+    /* #endregion */
+    /* #region SLIDER */
     .slider
     {
         margin: 0 auto;
@@ -910,9 +1001,10 @@ header
     {
         margin-right: 2rem;
     }
-    
-}
+    /* #endregion */
 
+}
+/*LAPTOPS*/
 @media (min-width:1680px) and (max-width: 1919px) {
     .headerTitle h1
     {
