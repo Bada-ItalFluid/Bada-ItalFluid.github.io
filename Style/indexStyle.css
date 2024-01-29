@@ -159,6 +159,7 @@ header
 .headerDiv2 li
 {
     padding: 0 4rem;
+    text-align: center;
 
     
 }
@@ -192,7 +193,7 @@ header
 .return a
 {   
     text-align: center;
-    padding: 1rem 1.6rem 1.6rem 1.4rem;
+    padding: 1rem 1.6rem 1.5rem 1.4rem;
     text-decoration: none;
     color: white;
     font-size: 5rem;
@@ -442,6 +443,8 @@ header
 
 /* #endregion */
 
+/* #region  */
+
 /* #region MEDIA */
 /* PHONES */
 @media (max-width: 480px) {
@@ -487,21 +490,31 @@ header
 
     .headerDiv2 ul
     {
-        padding: 1rem 0;
+
+        padding: 1rem 0rem;
     }
     .headerDiv2 li
     {
-        padding: 0 1rem;
+        padding: 0 1.4rem;
+        text-align: center;
+        display: flex;
+
+
+
     }
     .headerDiv2 a
     {
+        align-self: center;
         padding: 1rem 0;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
-
+    li.middle
+    {
+        width: 18%;
+    }
     .headerDiv2 a:hover
     {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     /* #endregion */
     /* #region RETURN */
@@ -623,17 +636,27 @@ header
     }
     .headerDiv2 li
     {
-        padding: 0 1rem;
+        padding: 0 2rem;
+        text-align: center;
+        display: flex;
+
+
+
     }
     .headerDiv2 a
     {
+        align-self: center;
         padding: 1rem 0;
         font-size: 1.6rem;
+    }
+    li.middle
+    {
+        width: 18%;
     }
 
     .headerDiv2 a:hover
     {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     /* #endregion */
     /* #region SLIDER */
@@ -741,24 +764,6 @@ header
         border-top: #eb9834 .4rem solid;
     }
 
-    .headerDiv2 ul
-    {
-        padding: 2rem 0;
-    }
-    .headerDiv2 li
-    {
-        padding: 0 2rem;
-    }
-    .headerDiv2 a
-    {
-        padding: 2rem 0;
-        font-size: 1.8rem;
-    }
-
-    .headerDiv2 a:hover
-    {
-        font-size: 1.3rem;
-    }
 
     .headerDiv1
     {
@@ -802,17 +807,21 @@ header
     }
     .headerDiv2 li
     {
-        padding: 0 1rem;
+        padding: 0 2rem;
+        text-align: center;
+        display: flex;
     }
     .headerDiv2 a
     {
+        align-self: center;
         padding: 1rem 0;
         font-size: 1.6rem;
     }
 
+
     .headerDiv2 a:hover
     {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     /* #endregion */
     /* #region SLIDER */
