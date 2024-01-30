@@ -760,32 +760,7 @@ header
     border-left-color: #ffffff;
   
 }
-.branchVideo
-{
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    z-index: 999;
-    background-color: #000000bb;
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-.active
-{
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    z-index: 999;
-    background-color: #000000bb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 /* #endregion */
 
@@ -1066,6 +1041,34 @@ header
         font-size: 2.4rem;
     }
     /* #endregion */
+    /* #region BRANCHES */
+    .branches h1
+    {
+        font-size: 2.4rem;
+    }
+    .qode_video_box .qode_video_image .qode_video_box_button_holder
+    {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-20%);
+    }
+    .qode_video_box .qode_video_image .qode_video_box_button
+    {
+    width: 5rem;
+    height: 5rem;
+    border: #eb9834 .4rem solid;
+
+    }
+    .qode_video_box .qode_video_image .qode_video_box_button_arrow
+    {
+    transform: translate(-39%,-50%);
+    border-top: 14px solid transparent;
+    border-left: 28px solid #eb9834;
+    border-bottom: 14px solid transparent;
+
+    }
+    /* #endregion */
+
 }
 /* PHONES LARGE AND SMALL TABLET*/
 @media (min-width: 480.5px) and (max-width: 564px) {
@@ -1340,6 +1343,34 @@ header
         font-size: 3.6rem;
     }
     /* #endregion */
+    /* #region BRANCHES */
+    .branches h1
+    {
+        font-size: 3.6rem;
+    }
+    .qode_video_box .qode_video_image .qode_video_box_button_holder
+    {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-20%);
+    }
+    .qode_video_box .qode_video_image .qode_video_box_button
+    {
+    width: 6rem;
+    height: 6rem;
+    border: #eb9834 .4rem solid;
+
+    }
+    .qode_video_box .qode_video_image .qode_video_box_button_arrow
+    {
+    transform: translate(-39%,-50%);
+    border-top: 20px solid transparent;
+    border-left: 32px solid #eb9834;
+    border-bottom: 20px solid transparent;
+
+    }
+    /* #endregion */
+
 }
 /*LARGE TABLETS AND SMALL LAPTOPS*/
 @media (min-width:564.5px) and (max-width: 1120px) {
@@ -1617,6 +1648,29 @@ header
         font-size: 4rem;
     }
     /* #endregion */
+    /* #region BRANCHES */
+    .branches h1
+    {
+        font-size: 4rem;
+    }
+
+    .qode_video_box .qode_video_image .qode_video_box_button
+    {
+    width: 7rem;
+    height: 7rem;
+    border: #eb9834 .4rem solid;
+
+    }
+    .qode_video_box .qode_video_image .qode_video_box_button_arrow
+    {
+    transform: translate(-39%,-50%);
+    border-top: 20px solid transparent;
+    border-left: 34px solid #eb9834;
+    border-bottom: 20px solid transparent;
+
+    }
+    /* #endregion */
+
 }
 @media (min-width:1024.5px) and (max-width: 1120px){
     /* #region CATEGORIES*/
