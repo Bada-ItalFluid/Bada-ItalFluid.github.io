@@ -571,7 +571,7 @@ header
 {
     margin-top: -2rem;
     font-family: textFont;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 .chart img
 {
@@ -580,6 +580,213 @@ header
     width: 100%;
 
 }
+/* #endregion */
+
+/* #region INTRO */
+.intro
+{
+    background-image: url(../Images/Intro/worldmap.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10rem;
+
+}
+.intro .text
+{
+    width: 49%;
+
+}
+.intro h1
+{
+    font-family: titleFont;
+    font-size: 5rem;
+    margin: 0;
+    user-select: none;
+    color: #eb9834;
+}
+.intro p
+{
+    margin: 0;
+    font-family: textFont;
+    font-size: 2rem;
+    color: black;
+}
+.intro .image
+{
+    width: fit-content;
+}
+.intro .image img
+{
+    width: 100%;
+}
+/* #endregion */
+
+/* #region LOCATIONS */
+.locations
+{
+    background-color: #313135;
+    display: grid;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+.locations h1
+{
+    font-family: titleFont;
+    text-align: center;
+    font-size: 5rem;
+    color: #eb9834;
+    user-select: none;
+}
+.locGrid
+{
+    justify-self: center;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    gap: 5rem;
+}
+.loc
+{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: #1A1A1C;
+    border-radius: 2rem;
+    padding: 5rem 1rem;
+    transition: 400ms;
+}
+.loc h2
+{
+    margin-bottom: 0;
+    font-size: 3rem;
+    font-family: textFont;
+    user-select: none;
+    color: white;
+    text-align: center;
+}
+.loc img
+{
+    justify-self: center;
+    margin: 0 auto;
+    width: 80%;
+}
+.loc:hover
+{
+    box-shadow: #eb9834 .5rem .5rem;
+}
+
+
+/* #endregion */
+
+/* #region BRANCHES */
+.branches
+{
+    display: grid;
+    justify-items: center;
+}
+.branches h1
+{
+    text-align: center;
+    font-family: titleFont;
+    font-size: 5rem;
+    width: fit-content;
+    color: black;
+}
+.qode_video_box .qode_video_image
+{
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.qode_video_box .qode_video_image img
+{
+  display: block;
+  position: relative;
+  max-width: 100%;
+  z-index: 22;
+  -webkit-transition: -webkit-transform .2s ease-out;
+  transition: transform .2s ease-out;
+}
+.qode_video_box .qode_video_image .qode_video_box_button_holder
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%,-20%);
+  z-index: 44;
+}
+.qode_video_box .qode_video_image .qode_video_box_button
+{
+  display: inline-block;
+  position: relative;
+  width: 11rem;
+  height: 11rem;
+  background-color: rgb(237, 237, 237);
+  overflow: hidden;
+  border-radius: 50%;
+  border: #eb9834 .4rem solid;
+  transition: 200ms;
+
+}
+.qode_video_box .qode_video_image .qode_video_box_button_arrow
+{
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-39%,-50%);
+  border-top: 34px solid transparent;
+  border-left: 54px solid #eb9834;
+  border-left-color: #eb9834;
+  border-bottom: 34px solid transparent;
+
+  transition: 200ms;
+}
+
+.qode_video_box .qode_video_image .qode_video_box_button:hover
+{
+    background-color: #eb9834;
+
+}
+
+.qode_video_box .qode_video_image .qode_video_box_button:hover > .qode_video_box_button_arrow
+
+{
+    border-left-color: #ffffff;
+  
+}
+.branchVideo
+{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 999;
+    background-color: #000000bb;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.active
+{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 999;
+    background-color: #000000bb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* #endregion */
 
 /* #region MEDIA */
@@ -822,6 +1029,43 @@ header
         margin-bottom: -.35rem;
     }
     /* #endregion */
+    /* #region INTRO */
+    .intro
+    {
+        display: block;
+        padding: 2rem;
+    }
+    .intro .text
+    {
+        width: auto;
+        text-align: center;
+
+    }
+    .intro h1
+    {
+        font-size: 2.4rem;
+        margin: 0;
+    }
+    .intro p
+    {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    .intro .image
+    {
+        display: none;
+    }
+    /* #endregion */
+    /* #region LOCATIONS */
+    .locations h1
+    {
+        font-size: 2.4rem;
+    }
+    .locations h2
+    {
+        font-size: 2.4rem;
+    }
+    /* #endregion */
 }
 /* PHONES LARGE AND SMALL TABLET*/
 @media (min-width: 480.5px) and (max-width: 564px) {
@@ -851,12 +1095,12 @@ header
     }
     .headerTitle h1
     {
-        font-size: 1.6rem;
+        font-size: 2.4rem;
 
     }
     .headerTitle span
     {
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
 
     .headerDiv2
@@ -882,7 +1126,7 @@ header
     {
         align-self: center;
         padding: 1rem 0;
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     li.middle
     {
@@ -891,7 +1135,7 @@ header
 
     .headerDiv2 a:hover
     {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     /* #endregion */
     /* #region SLIDER */
@@ -1047,15 +1291,53 @@ header
     }
     .workingMap .text p
     {
-        line-height: 2rem;
+        line-height: 2.1rem;
         margin-top: -1rem;
         font-family: textFont;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     .chart img
     {
         border-radius: 4rem 4rem 0 0;
         margin-bottom: -.35rem;
+    }
+    /* #endregion */
+    /* #region INTRO */
+    .intro
+    {
+        display: block;
+        padding: 2rem;
+    }
+    .intro .text
+    {
+        width: auto;
+        text-align: center;
+
+    }
+    .intro h1
+    {
+        font-size: 3.6rem;
+        margin: 0;
+    }
+    .intro p
+    {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .intro .image
+    {
+        display: none;
+    }
+    /* #endregion */
+
+    /* #region LOCATIONS */
+    .locations h1
+    {
+        font-size: 3.6rem;
+    }
+    .locations h2
+    {
+        font-size: 3.6rem;
     }
     /* #endregion */
 }
@@ -1076,26 +1358,6 @@ header
         width: 36%;
         justify-self: center;
 
-    }
-
-    .headerTitle
-    {
-        width: 100%;
-    }
-    .headerTitle h1
-    {
-        font-size: 2rem;
-
-    }
-    .headerTitle span
-    {
-        font-size: 2.6rem;
-    }
-
-    .headerDiv2
-    {
-        border-bottom: #eb9834 .3rem solid ;
-        border-top: #eb9834 .4rem solid;
     }
 
 
@@ -1121,12 +1383,12 @@ header
     }
     .headerTitle h1
     {
-        font-size: 1.6rem;
+        font-size: 2.8rem;
 
     }
     .headerTitle span
     {
-        font-size: 2rem;
+        font-size: 3.2rem;
     }
 
     .headerDiv2
@@ -1314,7 +1576,7 @@ header
         line-height: 2.8rem;
         margin-top: -1rem;
         font-family: textFont;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
     .chart img
     {
@@ -1322,9 +1584,41 @@ header
         margin-bottom: -.35rem;
     }
     /* #endregion */
+    /* #region INTRO */
+    .intro
+    {
+        display: block;
+        padding: 5rem;
+    }
+    .intro .text
+    {
+        width: auto;
+        text-align: center;
+
+    }
+    .intro h1
+    {
+        font-size: 4rem;
+        margin: 0;
+    }
+    .intro p
+    {
+        margin: 0;
+        font-size: 1.6rem;
+    }
+    .intro .image
+    {
+        display: none;
+    }
+    /* #endregion */
+    /* #region LOCATIONS */
+    .locations h1
+    {
+        font-size: 4rem;
+    }
+    /* #endregion */
 }
-@media (min-width:1024.5px) and (max-width: 1120px)
-{
+@media (min-width:1024.5px) and (max-width: 1120px){
     /* #region CATEGORIES*/
     .catGrid
     {
@@ -1420,6 +1714,41 @@ header
         border-radius: 4rem 4rem 0 0;
         margin-bottom: -.35rem;
     }
+    /* #endregion */
+
+    /* #region INTRO */
+    .intro
+    {
+        display: block;
+        padding: 6rem;
+    }
+    .intro .text
+    {
+        width: auto;
+        text-align: center;
+
+    }
+    .intro h1
+    {
+        font-size: 6rem;
+        margin: 0;
+    }
+    .intro p
+    {
+        margin: 0;
+        font-size: 2rem;
+    }
+    .intro .image
+    {
+        display: none;
+    }
+    /* #endregion */
+    /* #region LOCATIONS */
+    .locations h1
+    {
+        font-size: 6rem;
+    }
+
     /* #endregion */
 }
 /*LAPTOPS*/
@@ -1544,7 +1873,31 @@ header
         margin-right: 2rem;
     }
     /* #endregion */
+    /* #region INTRO */
 
+    .intro
+    {
+        padding: 6rem;
+    }
+    .intro h1
+    {
+        font-size: 5rem;
+        margin: 0;
+    }
+    .intro p
+    {
+        margin: 0;
+        font-size: 1.6rem;
+    }
+
+    /* #endregion */
+    /* #region LOCATIONS */
+    .locations h1
+    {
+        font-size: 5rem;
+    }
+
+    /* #endregion */
 }
 /*LAPTOPS*/
 @media (min-width:1680px) and (max-width: 1919px) {
