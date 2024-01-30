@@ -686,6 +686,7 @@ header
 {
     display: grid;
     justify-items: center;
+    background-color: white;
 }
 .branches h1
 {
@@ -693,7 +694,8 @@ header
     font-family: titleFont;
     font-size: 5rem;
     width: fit-content;
-    color: black;
+    color: #eb9834;
+    user-select: none;
 }
 .qode_video_box .qode_video_image
 {
@@ -1040,6 +1042,7 @@ header
     {
         font-size: 2.4rem;
     }
+    
     /* #endregion */
     /* #region BRANCHES */
     .branches h1
