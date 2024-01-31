@@ -766,6 +766,100 @@ header
 
 /* #endregion */
 
+/* #region FOOTER */
+footer
+{
+    background-color: #313135;
+    color: white;
+    width: 100%;
+
+}
+.footer1
+{
+    padding: 4rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer1 .top
+{
+    width: 80%;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer1 .top .cards
+{
+    display: flex;
+    justify-content: center;
+}
+.footer1 .top .cards .img
+{
+    display: flex;
+    justify-content: center;
+}
+.footer1 .top .mid .text
+{
+    text-align: center;
+}
+
+.footer1 .top h1
+{
+    color: #eb9834;
+    font-family: titlefont;
+    font-size: 3.5rem;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.footer1 .top .mid img
+{
+    width: 44%;
+}
+
+.footer1 .top .mid h1
+{
+    text-align: center;
+    font-family: titlefont;
+    user-select: none;
+    color: #eb9834;
+    font-size: 3.5rem;
+    margin-bottom: .5rem;
+}
+.footer1 .top .mid p
+{
+    margin-top: 0;
+    font-family: textfont;
+    font-size: 2rem;
+    
+}
+
+.footer1 .line
+{
+    display: flex;
+    align-items: center;
+}
+
+.hq, .tn
+{
+    display: grid;
+}
+
+.footer1 .line img{
+    width: 6.5rem;
+    height: 6.5rem;
+}
+.footer1 .line p{
+    font-family: textfont;
+    margin-left: .5rem;
+    font-size: 1.8rem;
+}
+
+
+/* #endregion */
+
 /* #region MEDIA */
 /* PHONES */
 @media (max-width: 480px) {
