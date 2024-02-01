@@ -1242,7 +1242,6 @@ footer
     }
 
     /* #endregion */
-
     /* #region FOOTER 2 */
     .footer2
     {
@@ -1265,6 +1264,7 @@ footer
     }
 
     /* #endregion */
+
 }
 /* PHONES LARGE AND SMALL TABLET*/
 @media (min-width: 480.5px) and (max-width: 564px) {
@@ -1623,6 +1623,7 @@ footer
     /* #endregion */
 
     /* #region FOOTER 2 */
+    
     .footer2
     {
         background-color: #1A1A1C;
@@ -1644,6 +1645,7 @@ footer
     }
 
     /* #endregion */
+
 }
 /*LARGE TABLETS AND SMALL LAPTOPS*/
 @media (min-width:564.5px) and (max-width: 1120px) {
@@ -2020,6 +2022,7 @@ footer
     }
 
     /* #endregion */
+
 }
 @media (min-width:1024.5px) and (max-width: 1120px){
     /* #region CATEGORIES*/
