@@ -53,7 +53,12 @@ img
 {
     user-select: none;
 }
+h1
+{
+    user-select: none;
+    font-family: titleFont;
 
+}
 /* #region LOADING PAGE */
 
 .loading
@@ -245,6 +250,100 @@ header
     font-size: 2.2rem;
 }
 /* #endregion */
+/* #region TITLE */
+.titlediv
+{
+    background-image: url(../Images/BackgroundTitle/titlebg.jpg);
+    
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+    border-bottom: #eb9834 solid .5rem;
+    border-radius: 0 0 4rem 4rem;
+
+}
+.titlediv h1
+{
+    color: #313135;
+
+    font-size: 6rem;
+    margin: 0;
+    text-align: center;
+}
+/* #endregion */
+
+.maincontainer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    width: 90%;
+    margin: 4rem auto;
+}
+
+.servicescontainer, .equipmentcontainer
+{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    grid-template-areas: 
+    "title"
+    "content";
+    justify-content: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 2rem;
+
+}
+
+.servicescontainer .title, .equipmentcontainer .title
+{
+    user-select: none;
+    grid-area: title;
+    text-align: center;
+    font-family: titleFont;
+    color: #eb9834;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+.servicescontainer .content, .equipmentcontainer .content
+{
+    width: 100%;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    
+}
+.servicescontainer h2, .equipmentcontainer h2
+{
+    text-align: center;
+    margin: 0.3rem;
+    
+}
+.servicescontainer a, .equipmentcontainer a
+{
+    color: #313135;
+    font-size: 2.5rem;
+    font-family: textfont;
+}
+
+.servicescontainer a:hover, .equipmentcontainer a:hover
+{
+    color: #eb9834;
+
+}
+
+
+.servicescontainer img, .equipmentcontainer img
+{
+    width: 100%;
+}
+
+
 
 /* #region MEDIA */
 /* PHONES */
@@ -340,6 +439,29 @@ header
         display: none;
     }
     /* #endregion */
+    /* #region TITLE */
+    .titlediv
+    {
+        
+        background-position: bottom;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+        border-bottom-width: .3rem;
+
+    }
+    .titlediv h1
+    {
+        color: #313135;
+
+        font-size: 3rem;
+        margin: 0;
+        text-align: center;
+    }
+    /* #endregion */
+    
 }
 /* PHONES LARGE AND SMALL TABLET*/
 @media (min-width: 480.5px) and (max-width: 564px) {
@@ -434,6 +556,29 @@ header
         display: none;
     }
     /* #endregion */
+        /* #region TITLE */
+        .titlediv
+        {
+            
+            background-position: bottom;
+            background-size: cover;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 2rem 0;
+            border-bottom-width: .4rem;
+    
+        }
+        .titlediv h1
+        {
+            color: #313135;
+    
+            font-size: 4rem;
+            margin: 0;
+            text-align: center;
+        }
+        /* #endregion */
+        
 }
 /*LARGE TABLETS AND SMALL LAPTOPS*/
 @media (min-width:564.5px) and (max-width: 1120px) {
@@ -514,6 +659,29 @@ header
         font-size: 1.6rem;
     }
     /* #endregion */
+    /* #region TITLE */
+    .titlediv
+    {
+        
+        background-position: bottom;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+        border-bottom-width: .4rem;
+
+    }
+    .titlediv h1
+    {
+        color: #313135;
+
+        font-size: 4.5rem;
+        margin: 0;
+        text-align: center;
+    }
+    /* #endregion */
+    
     /* #region RETURN */
     .return
     {
@@ -619,7 +787,28 @@ header
         font-size: 2.2rem;
     }
     /* #endregion */
+    /* #region TITLE */
+    .titlediv
+    {
+        
+        background-position: bottom;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
 
+    }
+    .titlediv h1
+    {
+        color: #313135;
+
+        font-size: 5rem;
+        margin: 0;
+        text-align: center;
+    }
+    /* #endregion */
+    
 }
 /*LAPTOPS*/
 @media (min-width:1680px) and (max-width: 1919px) {
@@ -634,6 +823,14 @@ header
     {
         font-size: 4rem;
     }
+        /* #region TITLE */
+
+        .titlediv h1
+        {
+    
+            font-size: 6rem;
+        }
+        /* #endregion */
     
 }
 /* #endregion */
