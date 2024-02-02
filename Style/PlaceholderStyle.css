@@ -1,0 +1,56 @@
+
+/* #region FONTS */
+
+@font-face {
+    font-family: decorFont;
+    src: url(Font/Pair2/CinzelDecorative.ttf);
+}
+@font-face {
+    font-family: titleFont;
+    src: url(Font/Pair2/Cinzel.ttf);
+}
+@font-face {
+    font-family: textFont;
+    src: url(Font/Pair2/FaunaOne.ttf);
+}
+@font-face {
+    font-family: slideTitle;
+    src: url(Font/Pair4/BarlowCondensed-Regular.ttf);
+}
+@font-face {
+    font-family: slideText;
+    src: url(Font/Pair4/AcariSans-Regular.ttf);
+}
+
+
+/*#endregion*/
+
+body
+{
+    background-color: #262629;
+    width: 99%;
+    margin-left: -1%;
+}
+div
+{
+    position: fixed;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+
+
+}
+div h1
+{
+    color: #eb9834;
+    font-size: 5vw;
+    font-family: titlefont;
+    user-select: none;
+}
