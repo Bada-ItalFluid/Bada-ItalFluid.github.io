@@ -280,7 +280,7 @@ header
 
 .maincontainer
 {   
-    width: 70%;
+    width: 90%;
     margin: 2.5rem auto;
     display: grid;
     grid-template-areas: 
@@ -312,7 +312,7 @@ header
 .choice div
 {
     text-align: center;
-    background-color: #262629;
+    background-color: #acacac;
     padding: 3rem 0;
     border-radius: 4rem;
     border: solid transparent .4rem;
@@ -321,7 +321,7 @@ header
 }
 .choice div a
 {
-    color: white;
+    color: #313135;
     font-family: textfont;
     font-size: 3rem;
     text-decoration: none;
@@ -329,7 +329,7 @@ header
 
     background-image: linear-gradient(90deg,#f08c13,#f08c13);
     background-repeat: no-repeat;
-    background-size: 0% .4rem;
+    background-size: 0% .3rem;
     background-position: center 100%;
     
     transition: color 600ms, background-size  1000ms;
@@ -343,7 +343,7 @@ header
 .choice div a:hover
 {
     color: #eb9834;
-    background-size: 100% .4rem;
+    background-size: 100% .3rem;
 
 }
 
@@ -351,7 +351,7 @@ header
 {
     justify-self: center;
     grid-area: display;
-    width: 80%;
+    width: 100%;
     height: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
