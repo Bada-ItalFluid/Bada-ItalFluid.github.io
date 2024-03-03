@@ -1,0 +1,95 @@
+/* #region FONTS */
+@font-face {
+    font-family: decorFont;
+    src: url(Font/Pair2/CinzelDecorative.ttf);
+}
+@font-face {
+    font-family: titleFont;
+    src: url(Font/Pair2/Cinzel.ttf);
+}
+@font-face {
+    font-family: textFont;
+    src: url(Font/Pair2/FaunaOne.ttf);
+}
+@font-face {
+    font-family: slideTitle;
+    src: url(Font/Pair4/BarlowCondensed-Regular.ttf);
+}
+@font-face {
+    font-family: slideText;
+    src: url(Font/Pair4/AcariSans-Regular.ttf);
+}
+/* #endregion */
+:root{
+    font-size: 62.5%;
+}
+.topContainer
+{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 6fr 1.4fr;
+    gap: 0rem;
+}
+.mainContainer
+{
+    width: 90%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+img
+{
+    width: 100%;
+}
+
+
+.mainContainer .text
+{
+    display: grid;
+    align-items: center;
+}
+.text p
+{
+    font-size: 2.5rem;
+    font-family: textfont;
+}
+
+.side
+{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: grid;
+    gap: 2rem;
+}
+.side h1
+{
+    margin-bottom: 0;
+}
+
+.sideCard
+{
+    margin-top: -1rem;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.side a
+{
+    font-family: textfont;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+
+    transition-duration: 400ms;
+}
+.side a:hover
+{
+    color: #dc851a;
+    font-size: 2.2rem;
+}
+

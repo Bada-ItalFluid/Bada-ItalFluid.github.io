@@ -168,6 +168,27 @@ h1
 }
 
 /* #endregion */
+/* #region FOOTER 2 */
+.footer2
+{
+    background-color: #1A1A1C;
+    width: 100%;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer2 p
+{
+    margin: 0 auto;
+    text-align: center;
+    color: #c3c3c3;
+    font-size: 2.2rem;
+    font-family: textfont;
+    letter-spacing: .1rem;
+}
+
+/* #endregion */
 
 /* #region HEADER */
 header
@@ -376,6 +397,29 @@ footer
 /* #region MEDIA */
 /* PHONES */
 @media (max-width: 480px) {
+    /* #region FOOTER 2 */
+    .footer2
+    {
+        background-color: #1A1A1C;
+        width: 100%;
+        padding: 3rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer2 p
+    {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        color: #c3c3c3;
+        font-size: 1.4rem;
+        font-family: textfont;
+        letter-spacing: .1rem;
+    }
+
+    /* #endregion */
+
     .loading h1{
         font-size: 12vw;
     }
@@ -567,7 +611,31 @@ footer
 }
 /* PHONES LARGE AND SMALL TABLET*/
 @media (min-width: 480.5px) and (max-width: 564px) {
+            
+    /* #region FOOTER 2 */
     
+    .footer2
+    {
+        background-color: #1A1A1C;
+        width: 100%;
+        padding: 3rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer2 p
+    {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        color: #c3c3c3;
+        font-size: 1.4rem;
+        font-family: textfont;
+        letter-spacing: .1rem;
+    }
+
+    /* #endregion */
+
     .loading h1{
         font-size: 14vw;
     }
@@ -960,6 +1028,29 @@ footer
 }
 /*LAPTOPS*/
 @media (min-width:1120.5px) and (max-width: 1919px) {
+                /* #region FOOTER 2 */
+                .footer2
+                {
+                    background-color: #1A1A1C;
+                    width: 100%;
+                    padding: 3rem 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .footer2 p
+                {
+                    width: 60%;
+                    margin: 0 auto;
+                    text-align: center;
+                    color: #c3c3c3;
+                    font-size: 1.6rem;
+                    font-family: textfont;
+                    letter-spacing: .1rem;
+                }
+            
+                /* #endregion */
+            
     .titlediv
     {
         
